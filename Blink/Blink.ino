@@ -22,6 +22,9 @@
   https://www.arduino.cc/en/Tutorial/BuiltInExamples/Blink
 */
 
+#undef LED_BUILTIN
+#define LED_BUILTIN PC13
+
 // the setup function runs once when you press reset or power the board
 void setup() {
   Serial.begin(9600);
