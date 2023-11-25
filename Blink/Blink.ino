@@ -37,6 +37,6 @@ void loop() {
   delay(500);                     // wait for a second
   digitalWrite(LED_BUILTIN, LOW); // turn the LED off by making the voltage LOW
   delay(100);                     // wait for a second
-  Serial.printf("Atún! [%03d]\n", cnt);
+  Serial.printf("Y tejen telas de araña; [%03d]\n", cnt);
   cnt++;
 }
