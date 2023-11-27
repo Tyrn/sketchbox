@@ -32,7 +32,7 @@ void setup() {
   while (!Serial)
     ;
   Wire.begin();
-  // Wire.setClock(400000);
+  Wire.setClock(400000);
   WirebeginTransmission();
   Wire.write(0x01); // Clear display
 
@@ -45,7 +45,7 @@ void loop() {
   Serial.printf(">>%d<<\n", count++);
   WirebeginTransmission();
   Wire.write(0x80); // Set cursor to the first line
-  // Wire.write("Hello, World!");
+  Wire.write("Hello, World!");
   WireendTransmission("loop");
-  delay(8000);
+  delay(3000);
 }
