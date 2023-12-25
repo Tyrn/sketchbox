@@ -5,7 +5,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-SRC_DIRS = "."
+SRC_DIRS = (".",)
 EXTENSIONS = (".C", ".CC", ".CPP", ".INO", ".H", ".HH", ".HPP")
 
 for dir in SRC_DIRS:
